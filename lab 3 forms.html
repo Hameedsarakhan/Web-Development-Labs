@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #c6c5c5;
+        }
+        table,tr,td{
+            background-color: rgb(188, 244, 244);
+            padding: 5 px;
+            border: 5 px;
+        }
+        h3{
+            width:40%;
+            text-align:center;
+            color: red;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <form action="/action_page.php">
+    <table border="5" cellspacing="10 px" cellpadding="10px">
+        <h3> Continental Hotel Reservation Form</h3>
+        <tr>
+            <th>Name</th>
+            <td> <input type="text" placeholder=" Enter your name"</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td> <input type="text" placeholder="info@continental.pk"</td>
+        </tr>
+        <tr>
+            <th>Mobile No</th>
+            <td> <input type="text" placeholder="enter your cell no"</td>
+        </tr>
+        <tr>
+            <th>Arrival Time</th>
+            <td> <input type="text" placeholder="enter your arrival time"</td>
+        </tr>
+        <tr>
+            <th>Departure</th>
+            <td > <input type="datetime"
+                <td> <input type="datetime"</td>
+            </td>
+        </tr>
+        <tr>
+            <th>Room Type</th>
+            <td> <input type="radio"name="r1" value="single">single
+             <input type="radio"name="r1" value="double">double
+             <input type="radio"name="r1" value="presidential suite">presidential suite</td>
+        </tr>
+        <tr>
+            <th>Preferences</th>
+            <td> <input type="checkbox"name="c1" value="Not smoking">Not smoking<br>
+                <input type="checkbox"name="c1" value="Internet">Internet<br>
+                <input type="checkbox"name="c1" value="Film Mattress">Film Mattress</td><br>
+        </tr>
+        <tr>
+            <th>Mode of Payment</th>
+            <td> <input type="checkbox"name="p1" value="Cash">Cash
+                <input type="checkbox"name="p1" value="Cheque">Cheque<br>
+                <input type="checkbox"name="p1" value="Credit card">Credit card
+                <input type="submit" value="Select Card" </td>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="button" name="send data" value= "Send Data"</input></th> 
+        </tr>     
+</table>
+  </form>
+</body>
+</html>
