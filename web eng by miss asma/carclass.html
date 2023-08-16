@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <p id="car1"></p><p id="car2"></p>
+    <p id="car3"></p><p id="car4"></p>
+    <p id="car5"></p>
+    <script>
+        class CAR{
+            constructor(brandname,priceNew,odometer,color,){
+                this.brandname=brandname;
+                this.priceNew=priceNew;
+                this.odometer=odometer;
+                this.color=color; }
+            get_brandname(){
+                return this.brandname;}
+            set_brandname(a){
+                this.brandname=a; }
+            get_priceNew(){
+                return this.priceNew;}
+            set_priceNew(a){
+                this.priceNew=a; }
+            get_odometer(){
+                return this.odometer; }
+            set_odometer(a){
+                this.odometer=a;}
+            get_color(){
+                return this.color; }
+            set_color(a){
+                this.color=a; }
+        getPriceAfterUse(){
+            return this.priceNew*(1-(this.odometer/600000));}
+        UpdateMiLeage(x)
+        {for(var i=0;i<=x;i++){
+                this.odometer++;}}
+        outputDetails(){
+            document.getElementById("car1").innerHTML="Car name is "+this.get_brandname();
+            document.getElementById("car2").innerHTML="Car color is "+this.get_color();
+            document.getElementById("car3").innerHTML="Car Mileage is "+this.get_odometer();
+            document.getElementById("car4").innerHTML="Car price is "+this.get_priceNew();
+            document.getElementById("car5").innerHTML="Car price after use is "+this.getPriceAfterUse();}}
+        let obj=new CAR('Honda',4000000,0,'blue');
+        obj.UpdateMiLeage(2000);
+        obj.outputDetails();
+</script></body></html>

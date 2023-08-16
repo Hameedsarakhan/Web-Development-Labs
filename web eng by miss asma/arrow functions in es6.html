@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 7</title>
+    <script>
+        const sum=(a,b)=>{
+            var result=a+b;
+            document.getElementById("demo").innerHTML=result;
+        }
+        const sub=(a,b)=>{
+            var result=a-b;
+            document.getElementById("demo").innerHTML=result;
+        }
+        const multiply=(a,b)=>{
+            var result=a*b;
+            document.getElementById("demo").innerHTML=result;
+        }
+        const divide=(a,b)=>{
+            var result=a/b;
+            document.getElementById("demo").innerHTML=result;
+        }
+        a=prompt("enter first no");
+        b=prompt("enter second no");
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="sum(a,b)" value="sum">sum</button>
+    <button onclick="sub(a,b)" value="sub">sub</button>
+    <button onclick="multiply(a,b)" value="multiply">multiply</button>
+    <button onclick="divide(a,b)" value="divide">divide</button>
+</body>
+</html>

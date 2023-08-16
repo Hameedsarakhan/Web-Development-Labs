@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <title>Map Functions</title> 
+ <script> 
+ let arr = [24, 62, 78, 92, 88, 30]; 
+ function factorial(n) { 
+ if (n <= 1) { 
+ return 1;} 
+ else { 
+ return n * factorial(n - 1);} 
+} 
+ function quotient(n) { 
+ return Math.floor(n / 2);} 
+ let a = arr.map(factorial); 
+ console.log("Factorial of each number is:\n" + a.join('\n')); 
+ let b = arr.map(quotient); 
+ console.log("Quotient of each number is:\n" + b.join('\n')); 
+ let c = arr.map(Math.cos); 
+ console.log("Cos of each number is:\n" + c.join('\n')); 
+ </script> 
+</head> 
+</html>

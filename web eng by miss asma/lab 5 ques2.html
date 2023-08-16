@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(WhatsApp\ Image\ 2023-05-12\ at\ 23.38.37.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    margin: 10px auto;
+    margin-right: 95px;
+    color: white;
+    display: grid;
+    grid-template-rows: 100px 158px 50px 290px;
+    grid-template-columns: 250px 750px;
+    gap: 10px;
+    padding-left: 90px;
+}
+.heading{
+    grid-column: 1/3;
+    background-color:rgb(94, 238, 236);
+    text-align:end;
+    padding:10px;
+}
+p{
+    font-size: 17px;
+    line-height: 25px;
+}
+.heading p{
+    color: rgb(40, 56, 51); 
+}
+.sidebar{
+    background-color: rgb(123, 243, 205);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    border: 4px solid rgb(6, 141, 89);
+    padding:15px 0px 0px 20px;
+}
+.sidebar h1{
+    padding-bottom: 10px;
+}
+.sidebar li{
+    color: red;
+    padding-top: 5px;
+}
+.sidebar ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+.sidebar ul li::before {
+    content: "\2022";  
+    color: black; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
+.sidebar li span{
+    color: white;
+}
+.content1{
+    background-color: rgb(200, 245, 231);
+    grid-column: 2/3;
+    grid-row: 2/4;
+    border: 4px solid rgb(61, 114, 90);
+    padding:10px;
+}
+.content1 p{
+    margin-top: 10px;
+    color: red;
+}
+.content1 span{
+    border-bottom: 2px dashed blue;
+}
+.content1 img{
+    width:200px;
+    height: 140px;
+    float: right;
+    margin-left: 5px;
+}
+.content2{
+    background-color: rgb(200, 245, 231);
+    grid-column: 2/3;
+    border: 4px solid rgb(35, 107, 31);
+    padding:10px;
+    margin-bottom: 20px;
+}
+.content2 img{
+    width:200px;
+    height: 165px;
+    float: right;
+    margin-left: 5px;
+}
+.content2 p{
+    padding: 8px 0px;
+    color: red;
+}
+.content2 span{
+    border-bottom: 2px dashed blue;
+}
+h1{
+    color: rgb(8, 167, 119);
+}
+.side1{
+    grid-row: 1/5;
+    grid-column: 1/2;
+}
+.side2{
+    grid-row: 1/5;
+}
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="heading">
+                <h1>Victoria's Journal</h1>
+                <p>So fresh and so clean</p>
+            </div>
+            <div class="sidebar">
+                <h1>Friends</h1>
+                <ul>
+                    <li>390 Buddies</li>
+                    <li><span>Big Will</span></li>
+                    <li>Conan the Librarian</li>
+                </ul>
+            </div>
+            <div class="content1">
+                <h1><span>04/09/08:</span> Spatulus</h1>
+                <img src="renkli-silikon-spatula-kcm16205819-1-cf0e74c01df04b5daae91ba75ec0b4b9.jpg" alt="spatula pic">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ipsa facere, error nesciunt odit ratione. Culpa veniam deserunt aliquid illum sint pariatur nihil molestiae fuga dolores, officiis laboriosam expedita ratione?</p>
+            
+            </div>
+            <div class="content2">
+                <h1><span>04/08/08:</span> Cookie Cupcakes</h1>
+                <img src="download.jpg" alt="cupcake pic">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quaerat explicabo ea aliquid repellendus quisquam, 
+                     magni! Facere, unde molestiae! Sequi saepe ducimus non
+                      temporibus alias fugit sapiente a numquam labore, 
+                      officia amet provident. Commodi dolorem iusto, 
+                       praesentium numquam itaque!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

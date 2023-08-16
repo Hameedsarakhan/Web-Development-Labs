@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add(a, b){
+            var p = a+b;
+            document.getElementById("p1").innerHTML="Result of addition: "+ p;
+        }
+        function sub(a, b){
+            var s = a-b;
+            document.getElementById("p2").innerHTML= "Result of subtraction:" + s;
+        }
+        function mult(a, b){
+            var m = a*b;
+            document.getElementById("p3").innerHTML="Result of multiplication:" + m;
+        }
+        function divide(a, b){
+            var d = a/b;
+            document.getElementById("p4").innerHTML="Result of multiplication:" + d;
+        }
+    </script>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center;">
+    
+    <p  style="height:30px; width: 30%; background-color: aqua;" id="p1"></p>
+    <br>
+    <p id="p2" style="height:30px; width: 30%; background-color: aqua;"></p>
+    <br>
+    <p id="p3" style="height:30px; width: 30%; background-color: aqua;"></p>
+    <br>
+    <p id="p4" style="height:30px; width: 30%; background-color: aqua;"></p>
+    <br>
+    <button value="add" onclick="add(x,y)" style="width: 10%;">Add</button>
+    <button value="subtract" onclick="sub(x,y)" style="width: 10%">Subtract</button>
+    <button value="multiply" onclick="mult(x,y)" style="width: 10%;">Multiply</button>
+    <button value="divide" onclick="divide(x,y)" style="width: 10%;">Divide</button>
+    
+    <script>
+        let x = parseInt(prompt("Enter first input"));
+        let y = parseInt(prompt("Enter second input"));
+        //    let r1 = add(x, y);
+        //    let r2 = sub(x, y);
+        //    let r3 = mult(x, y);
+        //    let r4 = divide(x, y);
+           /*document.getElementById("p1").innerHTML=r1;
+           document.getElementById("p2").innerHTML=r2;
+           document.getElementById("p3").innerHTML=r3;
+           document.getElementById("p4").innerHTML=r4;*/
+   </script>
+    
+</body>
+</html>

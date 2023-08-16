@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(a,b){
+            return a+b;
+        }
+        function sub(a,b){
+            return a-b;
+        }
+    </script>
+</head>
+<body>
+    <!--METHOD 2  WITH USER INPUT BUT NOT WITH BUTTON-->
+    <p style="color:aqua; height:70px; width:50px; background-color: black;" id="p1"></p>
+    <p style="color:aqua; height:70px; width:50px; background-color: black;" id="p2"></p>
+    <button value="add" onclick="sum()">Add</button>
+    <button value="add" onclick="sub()">Sub</button>
+    
+    <script>
+        let x=parseInt(prompt("enter the first input"));
+        let y=parseInt(prompt("enter the second input"));
+        let result=sum(x,y);
+    
+   
+        let r4=sum(x,y);
+        let r5=sub(x,y);
+        document.getElementById("p1").innerHTML=r4;
+        document.getElementById("p2").innerHTML=r5;
+    </script>
+       
+</body>
+</html>

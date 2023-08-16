@@ -1,0 +1,19 @@
+.main-box{width: 700px; height: 1090px; 
+	background: linear-gradient(var(--one), var(--two));
+	margin: 50px auto;
+	box-shadow:5px 5px 5px 5px #54585d33;
+}
+.name{width:100%;height:0px;text-align:center;padding-bottom: 60px;}
+.left-box{width: 35%; float: left; height: 700px;padding-bottom: 60px;}
+.right-box{width: 65%; float: left; background-color: var(--white); height: 1000px;
+	; border-radius: 50px 0px 0px 50px;padding-top:40px;
+	box-shadow: -7px 2px 15px 2px #54585d52;}
+.profile{width: 130px; height: 130px; margin-left: auto;
+	margin-right: auto;padding-top:10 px;text-align: center;}
+.info{    padding-bottom: 50px ;margin-bottom: 10px;display:inline;}
+.courses{width: 90%;padding-left: 20px;}
+.lang{width: 100%;float: left; position: relative;padding-left:20px;}
+.about{width: 90%;padding-left: 20px;}
+.edu{width: 65%;position: relative;padding-top:80px;padding-left:20px;}
+.exp{width: 90%;padding-left: 20px;}
+.skills{width: 90%;padding-left: 20px;}

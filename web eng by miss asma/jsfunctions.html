@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button{
+            width:100px;
+            height:40px;
+            color:white;
+            background-color: black;
+        }
+    </style>
+    <script>
+        function vowel()
+        {
+            const a=prompt("Enter character");
+            const vowel=['a','e','i','o','u','A','E','I','O','U'];
+            for(let i=0; i<=9;i++){
+                if(a==vowel[i]){
+                    document.write("The character is a vowel")
+                     break;
+                }
+            }
+        }
+        function randomno(){
+            for (var i=0;i<=20;i++){
+                const a=Math.floor(Math.random()*21);
+                document.write(a,",");
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+<button onclick="vowel()" value="vowel">check vowel</button>
+<button onclick="randomno()" value="random"> random no</button>
+</html>
+</html>

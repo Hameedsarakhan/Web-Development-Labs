@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.body.style.color = 'white';
+        document.body.style.padding = '0px';  document.body.style.margin = '0px';
+        
+        let nav = document.createElement('div');
+        nav.appendChild(document.createTextNode("Home AboutUs Contact BookOnline"));
+        nav.style.backgroundColor = '#03254c';
+        nav.style.textShadow = '1px darkblue';
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'row-reverse';
+        nav.style.justifyContent = 'space-evenly';
+        nav.style.alignItems = 'center';
+        nav.style.wordSpacing = '20px';
+        nav.style.width = '100%';
+        nav.style.padding = '12px 0px';
+
+        let navbox = document.createElement('span');
+        let navimg = document.createElement('img');
+        navbox.appendChild(document.createTextNode("Login"));
+        navimg.src = 'images.png';
+        navimg.style.width = '30px';
+        navbox.style.display = 'flex';
+        navbox.style.alignItems = 'center';
+        navbox.style.flexDirection = 'row-reverse';
+        navbox.style.gap = '10px';
+        navbox.appendChild(navimg);
+
+        let navlogo = document.createElement('span');
+        navlogo.appendChild(document.createTextNode('FAREED&CO'));
+        navlogo.appendChild(document.createElement('br'));
+        navlogo.appendChild(document.createTextNode('REALESTATE'));
+        navlogo.style.display = 'flex';
+        navlogo.style.alignItems = 'center';
+        navlogo.style.gap = '60px';
+
+        navlogo.appendChild(navbox);
+        nav.appendChild(navlogo);
+        document.body.appendChild(nav);
+
+        let cover = document.createElement('div');
+        let coverimg = document.createElement('img');
+        coverimg.style.zIndex = '-1';
+        coverimg.src = "WhatsApp Image 2023-05-13 at 08.06.34.jpeg";
+        coverimg.style.width = "100%";
+        coverimg.style.height = "100vh";
+        cover.style.position = 'relative';
+        cover.appendChild(coverimg);
+        document.body.appendChild(cover);
+
+        let contact = document.createElement('span');
+        contact.appendChild(document.createTextNode('Call Us: 123-414-4190'));
+        contact.style.Color = 'white';
+        contact.style.backgroundColor = '#03254c';
+        contact.style.height = 'fit-content';
+        contact.style.padding = '8px';
+        contact.style.right = '220px';
+        contact.style.top = '5px';
+        contact.style.position = 'absolute';
+        contact.style.opacity = '0.9';
+        cover.appendChild(contact);
+
+        let content = document.createElement('span');
+        content.appendChild(document.createTextNode('STUNNING 6 BED APPARTMENT IN THE HEART OF THE CITY'));
+        content.appendChild(document.createElement('br'));
+        content.appendChild(document.createElement('br'));
+        content.appendChild(document.createTextNode('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.'));
+        content.appendChild(document.createElement('hr'));
+        content.style.height = 'fit-content';
+        content.style.width = '200px';
+        content.style.padding = '20px';
+        content.style.backgroundColor = '#03254c';
+        content.style.position = 'absolute';
+        content.style.wordSpacing = '5px';
+        content.style.textAlign = 'left';
+        content.style.opacity = '0.9';
+        content.style.left = '250px';
+        content.style.top = '400px';
+
+        let p = document.createElement('span');
+        p.appendChild(document.createTextNode('$2,000,000'));
+        p.style.margin = '10px 60px';
+        content.appendChild(p);
+
+        let Salesbtn = document.createElement('button');
+        Salesbtn.appendChild(document.createTextNode('All Sales'));
+        Salesbtn.style.padding = '5px';
+        Salesbtn.style.margin = '10px 53.5px 0px';
+        content.appendChild(Salesbtn);
+        cover.appendChild(content);
+
+        let sales= document.createElement('div');
+        sales.style.color = '#03254c';
+        sales.style.height = '920px';
+        sales.style.textAlign = 'center';
+        sales.style.paddingTop = '125px';
+
+        let salesbox = document.createElement('div');
+        salesbox.style.display = 'flex';
+        salesbox.style.flexDirection = 'column';
+        salesbox.style.justifyContent = 'space-between';
+        salesbox.style.gap = '60px';
+
+        let saleh1 = document.createElement('span');
+        saleh1.appendChild(document.createTextNode('LATEST PROPERTIES FOR SALE'));
+        saleh1.style.fontWeight = '600';
+        saleh1.style.fontSize = '24px';
+        salesbox.appendChild(saleh1);
+
+        let salesbox1 = document.createElement('div');
+        salesbox1.style.display = 'flex';
+        salesbox1.style.gap = '50px';
+        salesbox1.style.justifyContent = 'center';
+        salesbox1.style.alignContent = 'center';
+        salesbox1.style.alignItems = 'center';
+        salesbox1.style.textAlign = 'left';
+
+        let s1 = document.createElement('div');
+        s1img = document.createElement('img');
+        s1img.src = "WhatsApp Image 2023-05-13 at 08.06.32 (1).jpeg";
+        s1img.style.width = '200px';
+        s1img.style.height = '220px';
+        s1.appendChild(s1img);
+
+        let s1txt = document.createElement('span');
+        s1txt.appendChild(document.createTextNode('OWN AVENUE'));
+        s1txt.style.fontWeight = '800';
+        s1.appendChild(s1txt);
+        s1.appendChild(document.createElement('br'));
+        s1.appendChild(document.createTextNode('$1,000,000'));
+        s1.appendChild(document.createElement('br'));
+        s1.appendChild(document.createElement('br'));
+        s1.appendChild(document.createTextNode('4 Properties'));
+        s1.appendChild(document.createElement('br'));
+        s1.appendChild(document.createElement('br'));
+        s1.appendChild(document.createTextNode('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'));
+        s1.appendChild(document.createElement('br'));
+        s1.appendChild(document.createElement('br'));
+        s1.style.width = '200px';
+
+        let s1btn = document.createElement('button');
+        s1btn.appendChild(document.createTextNode('Read More'));
+        s1btn.style.padding = '5px';
+        s1btn.style.color = 'white';
+        s1btn.style.backgroundColor = '#03254c';
+        s1btn.style.marginTop = '10px';
+        s1.appendChild(s1btn);
+
+        let s2 = document.createElement('div');
+        s2img = document.createElement('img');
+        s2img.src = "WhatsApp Image 2023-05-13 at 08.06.33 (1).jpeg";
+        s2img.style.width = '200px';
+        s2img.style.height = '220px';
+        s2.appendChild(s2img);
+
+        let s2txt = document.createElement('span');
+        s2txt.appendChild(document.createTextNode('QUEENS WAY'));
+        s2txt.style.fontWeight = '800';
+        s2.appendChild(s2txt);
+
+        s2.appendChild(document.createElement('br'));
+        s2.appendChild(document.createTextNode('$2,000,000'));
+        s2.appendChild(document.createElement('br'));
+        s2.appendChild(document.createElement('br'));
+        s2.appendChild(document.createTextNode('5 Properties'));
+        s2.appendChild(document.createElement('br'));
+        s2.appendChild(document.createElement('br'));
+        s2.appendChild(document.createTextNode('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'));
+        s2.appendChild(document.createElement('br'));
+        s2.appendChild(document.createElement('br'));
+        s2.style.width = '200px';
+
+        let s2btn = document.createElement('button');
+        s2btn.appendChild(document.createTextNode('Read More'));
+        s2btn.style.padding = '5px';
+        s2btn.style.color = 'white';
+        s2btn.style.backgroundColor = '#03254c';
+        s2btn.style.marginTop = '10px';
+        s2.appendChild(s2btn);
+
+        let s3 = document.createElement('div');
+        s3img = document.createElement('img');
+        s3img.src = "WhatsApp Image 2023-05-13 at 08.06.34.jpeg";
+        s3img.style.width = '200px';
+        s3img.style.height = '220px';
+        s3.appendChild(s3img);
+
+        let s3txt = document.createElement('span');
+        s3txt.appendChild(document.createTextNode('RANDALL CLOSE'));
+        s3txt.style.fontWeight = '800';
+        s3.appendChild(s3txt);
+
+        s3.appendChild(document.createElement('br'));
+        s3.appendChild(document.createTextNode('$2,000,000'));
+        s3.appendChild(document.createElement('br'));
+        s3.appendChild(document.createElement('br'));
+        s3.appendChild(document.createTextNode('6 Properties'));
+        s3.appendChild(document.createElement('br'));
+        s3.appendChild(document.createElement('br'));
+        s3.appendChild(document.createTextNode('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'));
+        s3.appendChild(document.createElement('br'));
+        s3.appendChild(document.createElement('br'));
+        s3.style.width = '200px';
+
+        let s3btn = document.createElement('button');
+        s3btn.appendChild(document.createTextNode('Read More'));
+        s3btn.style.padding = '5px';
+        s3btn.style.color = 'white';
+        s3btn.style.backgroundColor = '#03254c';
+        s3btn.style.marginTop = '10px';
+        s3.appendChild(s3btn);
+
+        salesbox1.appendChild(s1);
+        salesbox1.appendChild(s2);
+        salesbox1.appendChild(s3);
+        salesbox.appendChild(salesbox1);
+
+        let saleh2 = document.createElement('span');
+        saleh2.appendChild(document.createTextNode('LATEST RENTAL PROPERTIES'));
+        saleh2.style.fontWeight = '600';
+        saleh2.style.fontSize = '24px';
+        salesbox.appendChild(saleh2);
+        sales.appendChild(salesbox);
+        document.body.appendChild(sales);
+
+        let footer = document.createElement('div');
+        footer.style.backgroundColor = '#03254c';
+        footer.style.width = '100%';
+        footer.style.padding = '10px 0px 10px';
+        footer.style.marginTop='-60px';
+        footer.style.position = 'relative';
+
+        fcon = document.createElement('div');
+        fcon.appendChild(document.createTextNode('CHASE AVENUE'));
+        fcon.appendChild(document.createElement('br'));
+        fcon.appendChild(document.createElement('br'));
+        fcon.appendChild(document.createTextNode('4 Bedrooms'));
+        fcon.appendChild(document.createElement('br'));
+        fcon.appendChild(document.createElement('br'));
+        fcon.appendChild(document.createTextNode('Lorem Ipsum is simply dummy text of the printing and typesetting industry.'));
+        fcon.style.margin = '0px 640px';
+        fcon.style.width = '280px';
+
+        footerimg = document.createElement('img');
+        footerimg.src = "WhatsApp Image 2023-05-13 at 08.06.32 (1).jpeg";
+        footerimg.style.width = '180px';
+        footerimg.style.height = '150px';
+        footerimg.style.position = 'absolute';
+        footerimg.style.top = '-28px';
+        footerimg.style.left = '420px';
+        footer.appendChild(footerimg);
+        footer.appendChild(fcon);
+        document.body.appendChild(footer);
+    </script>
+</body>
+</html>
+</script>
+</body>
+</html>

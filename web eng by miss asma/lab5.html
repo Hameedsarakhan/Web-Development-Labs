@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.section{
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background:url(background1.jpg);
+    background-position:center;
+    background-size: cover;
+    height:109vh;
+    opacity:95%;
+    margin:auto;
+}
+.navbar{
+    width:1200px;
+    height:75px;
+    margin:auto;
+}
+.icon{
+    width: 200px;
+    height:70px;
+    float:left;
+}
+.logo{
+    color:brown;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float:left;
+    padding-top: 10px;
+}
+.menu{
+    float:left;
+    width:400px;
+    height:70px;
+}
+ul{
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 16px;
+}
+ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+}
+.search{
+    float:left;
+    padding-left: 270px;
+    padding-top:20px;
+    width:330px;
+    color:aliceblue
+}
+.find{
+    font-family:'Times New Roman', Times, serif;
+    float:left;
+    margin-top:10px;
+    color:rgb(238, 227, 227);
+    background: transparent;
+    border: 2px solid rgb(201, 22, 225);
+    width:200px;
+    height:40px;
+    padding:10px;
+    font-size: 16px;
+    border-right: none;
+}
+.btn{
+    margin-top:10px;
+    width:100px;
+    height:40px;
+    font-size: 15px;
+    background: rgb(221, 99, 11);
+    border:2px solid rgb(10, 10, 9);
+    color:aliceblue
+}
+.btnbtn{
+    margin-top:10px;
+    width:100px;
+    height:40px;
+    font-size: 15px;
+    background: rgb(221, 99, 11);
+    border-radius:10px;
+    border:none;
+    color:aliceblue;
+}
+.content{
+    padding-bottom: 150px;
+    width:1200px;
+    height:auto;
+    margin:auto;
+    color:rgb(255, 255, 255);
+    margin-left: 40px;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:larger;
+}
+.content.para
+{
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content span{
+    color: rgb(236, 113, 4);
+    font-style: bold;
+    font-size:larger;
+}
+.form{
+    width:300px;
+    height:300px;
+    background-color: black;
+    color:white;
+    margin-right:50px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 110px;
+    margin-right: 50px;
+}
+.form input{
+    background:transparent;
+}
+.link{
+    color:aliceblue
+}
+.main{
+    width:100%;
+    height:100%;
+    display:flex;
+    padding-right:400px;
+}
+</style>
+</head>
+<body>
+    <div class="section">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PraRoz</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Design</a></li>
+                    <li> <a href="#">Product</a></li>
+                    <li> <a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="find" type="search" placeholder="Enter text">
+                <button class="btn"> <a href="#">Search</a></button>
+            </div>
+        </div>
+            <div class="main">
+                <div  class="content">
+                    <h1 class="content.cn"> Web Design & <br> <span>Development</span><br>Course</h1>
+                    <p class="para">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> 
+                        quis nostrud exercitation ullamconisi ut aliquip ex ea commodo consequat.<br>
+                    </p>
+                    <button class="btnbtn"> <a href="Register"> Join Us</a></button>
+                </div>
+                <div class="form">
+                    <h1> Login here </h1>
+                    <br>
+                    <input  type="email" name="email" placeholder="Enter email here">
+                    <input  type="password" name="password" placeholder="Enter password">
+                    <br> <br>
+                    <button class="btn"> <a href="login"> Login Here</a></button>
+                    <p class="link"> don't have an account ? </p>
+                    <br>
+                    <a href="#Sign-up now">Sign-up Now</a>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

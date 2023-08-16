@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        class ROOM{
+            constructor(length,breadth,height){
+                this.length=length;
+                this.breadth=breadth;
+                this.height=height;}
+            calculateArea(){
+                return this.area=this.length*this.breadth;}
+            calculateVolume(){
+                return this.area=this.length*this.breadth*this.height; }
+            getLength(){
+                return this.length;}
+            getheight(){
+                return this.height; } 
+            getbreadth(){
+                return this.breadth;}
+            setLength(a){
+                return this.length=a;}
+            setHeight(a){
+                return this.height=a;} 
+            setBreadth(a){
+                return this.breadth=a;
+            }
+        }
+        let obj=new ROOM(10,20,25);
+        document.getElementById("demo1").innerHTML="Area of Room is "+obj.calculateArea();
+        document.getElementById("demo2").innerHTML="Volume of Room is "+obj.calculateVolume();
+</script>
+</body>
+</html>

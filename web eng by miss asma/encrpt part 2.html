@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        a=prompt("Enter 4 digit no");
+        function decrypt(){
+            let firstno=Math.floor(a/1000);
+            let remainder=(a%1000);
+            let second=Math.floor(remainder/100);
+            let remainder2=(remainder%100);
+            let third=Math.floor(remainder2/10);
+            let fourth=(remainder2%10);
+            let no1=third+7;
+            let no2=fourth+7;
+            let no3=firstno+7;
+            let no4=second+7;
+            document.write("Decrypted text of"," ",a," is ",no1," ",no2, " ",no3," ",no4);
+        }
+    </script>
+</head>
+<body>
+<button onclick= "decrypt()" value="decrypt"> decrypt</button>
+</body>
+</html>
